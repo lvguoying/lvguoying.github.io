@@ -1,0 +1,752 @@
+
+<!DOCTYPE html>
+<html lang="zh-CH" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>React50个面试题 - 少帅的个人技术blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="TriDiamond Obsidian,"> 
+    <meta name="description" content="目前就职于蚂蚁分工,你真的了解React吗？这里有50个React面试问题
+原创： 少帅blog
+
+
+如果你是一位有理想的前端开发人员，并且正在准备面试，那么这篇文章就是为你准备的。本文收集了 React 面试中最常见,"> 
+    <meta name="author" content="国营"> 
+    <link rel="alternative" href="atom.xml" title="少帅的个人技术blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    <link href="https://fonts.loli.net/css?family=Roboto+Mono|Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1429596_nzgqgvnmkjb.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/codemirror.min.css">
+    <link rel="stylesheet" href="//cdn.bootcss.com/codemirror/5.48.4/theme/dracula.css">
+    <link rel="stylesheet" href="/css/obsidian.css">
+    <link rel="stylesheet" href="/css/ball-atom.min.css">
+</head>
+
+
+<body class="loading">
+    <div class="loader">
+        <div class="la-ball-atom la-2x">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <span id="config-title" style="display:none">少帅的个人技术blog</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div class="scrollbar gradient-bg-rev"></div>
+<div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <div class="navigation animated fadeIn fast delay-1s">
+        <img id="home-icon" class="icon-home" src="/img/favicon.png" alt="" data-url="http://yoursite.com">
+        <div id="play-icon" title="Play/Pause" class="iconfont icon-play"></div>
+        <h3 class="subtitle">React50个面试题</h3>
+        <div class="social">
+            <!--        <div class="like-icon">-->
+            <!--            <a href="javascript:;" target="_blank" rel="noopener" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
+            <!--        </div>-->
+            <div>
+                <div class="share">
+                    
+                        <a href="javascript:;" target="_blank" rel="noopener" class="iconfont icon-share1"></a>
+                        <div class="share-component-cc" data-disabled="facebook,douban,linkedin,diandian,tencent,google"></div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="section">
+        <div class=article-header-wrapper>
+    <div class="article-header">
+        <div class="article-cover animated fadeIn" style="
+            animation-delay: 600ms;
+            animation-duration: 1.2s;
+            background-image: 
+                radial-gradient(ellipse closest-side, rgba(0, 0, 0, 0.65), #100e17),
+                url(/img/cover.jpg);">
+        </div>
+        <div class="else">
+            <p class="animated fadeInDown">
+                
+                <a href="javascript:;" target="_blank" rel="noopener"><b>「 </b>Article<b> 」</b></a>
+                
+                November 29, 2019
+            </p>
+            <h3 class="post-title animated fadeInDown"><a href="/2019/11/29/interviewReact/" title="React50个面试题" class="">React50个面试题</a>
+            </h3>
+            
+            <p class="post-count animated fadeInDown">
+                
+                <span>
+                    <b class="iconfont icon-text2"></b> <i>Words count</i>
+                    19k
+                </span>
+                
+                
+                <span>
+                    <b class="iconfont icon-timer__s"></b> <i>Reading time</i>
+                    17 mins.
+                </span>
+                
+                
+                
+                <span id="busuanzi_container_page_pv">
+                    <b class="iconfont icon-read"></b> <i>Read count</i>
+                    <span id="busuanzi_value_page_pv">0</span>
+                </span>
+                
+            </p>
+            
+            
+            <ul class="animated fadeInDown post-tags-list" itemprop="keywords"><li class="animated fadeInDown post-tags-list-item"><a class="animated fadeInDown post-tags-list-link" href="/tags/React-%E9%9D%A2%E8%AF%95-%E6%80%BB%E7%BB%93/" rel="tag">React 面试 总结</a></li></ul>
+            
+        </div>
+    </div>
+</div>
+
+<div class="screen-gradient-after">
+    <div class="screen-gradient-content">
+        <div class="screen-gradient-content-inside">
+            <div class="bold-underline-links screen-gradient-sponsor">
+                <p>
+                    <span class="animated fadeIn delay-1s"></span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="article">
+    <div class='main'>
+        <div class="content markdown animated fadeIn">
+            <h2 id="你真的了解React吗？这里有50个React面试问题"><a href="#你真的了解React吗？这里有50个React面试问题" class="headerlink" title="你真的了解React吗？这里有50个React面试问题"></a>你真的了解React吗？这里有50个React面试问题</h2><blockquote>
+<p>原创： 少帅blog</p>
+</blockquote>
+<p><img src="https://img-blog.csdnimg.cn/20191129091609200.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="1"></p>
+<h6 id="如果你是一位有理想的前端开发人员，并且正在准备面试，那么这篇文章就是为你准备的。本文收集了-React-面试中最常见的-50-大问题，这是一份理想的指南，让你为-React-相关的面试做好充分的准备工作。"><a href="#如果你是一位有理想的前端开发人员，并且正在准备面试，那么这篇文章就是为你准备的。本文收集了-React-面试中最常见的-50-大问题，这是一份理想的指南，让你为-React-相关的面试做好充分的准备工作。" class="headerlink" title="如果你是一位有理想的前端开发人员，并且正在准备面试，那么这篇文章就是为你准备的。本文收集了 React 面试中最常见的 50 大问题，这是一份理想的指南，让你为 React 相关的面试做好充分的准备工作。"></a>如果你是一位有理想的前端开发人员，并且正在准备面试，那么这篇文章就是为你准备的。本文收集了 React 面试中最常见的 50 大问题，这是一份理想的指南，让你为 React 相关的面试做好充分的准备工作。</h6><p>首先我们快速了解一下 React 在市场上的需求和现状，然后再开始讨论 React 面试问题。</p>
+<p>JavaScript 工具的市场地位正在缓慢而稳定地上升当中，而对 React 认证的需求正在飞速增长。选择正确的技术来开发应用程序或网站变得愈加艰难。React 被认为是 JavaScript 语言中增长最快的框架。</p>
+<p>虚拟 DOM 和可复用部件等独特特性吸引了前端开发人员的注意。尽管成熟的框架（如 Angular、Meteor 和 Vue 等）在 MVC（模型 - 视图 - 控制器）中只是一个“视图”库，但它们都有很强的竞争力。下图显示了常见 JS 框架的趋势：<br><img src="https://img-blog.csdnimg.cn/20191129091919145.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="2"></p>
+<blockquote>
+<p>以下是面试官最有可能提出的 50 个面试问题和答案：</p>
+</blockquote>
+<p>$\color{blue}{1. 真实 DOM 和虚拟 DOM 的区别}$<img src="https://img-blog.csdnimg.cn/20191129092119797.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="3"><br> $\color{blue}{ 2. 什么是 React？？}$</p>
+<ul>
+<li>React 是 2011 年由 Facebook 开发的前端 JavaScript 库。</li>
+<li>它遵循基于组件的方法，这种方法可以用来构建可复用的 UI 组件。</li>
+<li>它用于复杂的交互式 Web 端和移动端用户界面开发。</li>
+<li>尽管它在 2015 年才开源，但得到了一家巨头的支持</li>
+</ul>
+<p>$\color{blue}{3. React 的特点是什么？}$</p>
+<ul>
+<li>轻量级 DOM，以获得更好的性能。</li>
+<li>在 React 中，一切都被视为组件</li>
+<li>React 使用 JSX（JavaScript eXtension），使我们可以编写类似于 HTML 的 JavaScript。</li>
+<li>React 不是直接运行在浏览器的文档对象模型（DOM）上，而是运行在虚拟 DOM 上。</li>
+<li>ReactJS 遵循单向数据流或单向数据绑定。</li>
+</ul>
+<p>$\color{blue}{4. 列出 React 的一些主要优势。}$</p>
+<ul>
+<li>可以提高应用程序的性能。</li>
+<li>可以方便地用在客户端和服务端。</li>
+<li>由于有了 JSX，代码的可读性提高了。</li>
+<li>使用 React 后，编写 UI 测试用例变得非常容易。</li>
+</ul>
+<p>$\color{blue}{ 5.  React 有哪些局限？}$</p>
+<ul>
+<li>React 只是一个库，而不是一个成熟的框架。</li>
+<li>它的库很大，需要花费一些时间来理解。</li>
+<li>新手程序员可能很难入门。</li>
+<li>由于它使用了内联模板和 JSX，编码也比较复杂。</li>
+</ul>
+<p>$\color{blue}{ 6.什么是 JSX？？}$<br>JSX 是 JavaScript XML 的简写。这是 React 使用的一种文件类型，具备 JavaScript 的表现力，并使用 HTML 作为模板语法。这样一来 HTML 文件理解起来就非常简单。这种文件可以创造稳健的应用程序并提高其效率。下面是一个 JSX 实例： </p>
+<pre><code class="javascript">render(){
+    return(
+       &lt;div&gt;
+           &lt;h1&gt; Hello World from Codersera!!&lt;/h1&gt;
+       &lt;/div&gt;
+      ![微信图](https://img-blog.csdnimg.cn/20191129093506630.jpg)  );
+      }</code></pre>
+<p>$\color{blue}{ 7. 你对虚拟 DOM 有什么了解？解释其工作机制。}$<br>虚拟 DOM 是轻量级的 JavaScript 对象，一开始只是真实 DOM 的一个副本。它是一个节点树，将组件列为对象及其属性和内容的列表。React 的渲染功能从 React 的各个部分生成一个节点树。然后，它会根据由不同用户或系统行为引起的信息模型突变来更新此树。<br>              <strong>虚拟 DOM 的工作机制只有简单的三步组成。</strong><br>1.每当任何基础信息更改时，整个 UI 就会以虚拟 DOM 的表示形式重新渲染。<br><img src="https://img-blog.csdnimg.cn/20191129093520306.jpg" alt="4"><br>2.然后计算先前的 DOM 表示和新的 DOM 表示之间的区别。<br><img src="https://img-blog.csdnimg.cn/20191129093550954.jpg" alt="5"><br>3. 计算完成后，只有实际更改的内容才会更新到真实 DOM。<br> <img src="https://img-blog.csdnimg.cn/2019112909363434.jpg" alt="6"><br> $\color{blue}{  8. 为什么浏览器无法读取 JSX？}$<br> React 使用 JSX（JavaScript eXtension），我们可以用它编写类似于 HTML 的 JavaScript。但由于 JSX 不是合法的 JavaScript，因此浏览器无法直接读取它。如果 JavaScript 文件包含 JSX，则必须将其转换。你需要一个转换器将 JSX 转换为浏览器可以理解的常规 Javascript。目前最常用的转换器是 Babel。<br>  $\color{blue}{9. 与 ES5 相比，React 的 ES6 语法有何不同？}$<br>  ES5 和 ES6 的语法区别如下：</p>
+<pre><code class="javascript">// ES5
+var React = require(&#39;react&#39;);
+// ES6
+import React from &#39;react&#39;;
+
+******** export vs exports *********
+
+// ES5
+module.exports = Component;
+// ES6
+export default Component;
+
+****** function *****
+// ES5
+
+var MyComponent = React.createClass({
+  render: function() {
+    return &lt;h3&gt; Hello CoderSera! &lt;/h3&gt;
+  },
+});
+
+// ES6
+class MyComponent extends React.Component {
+  render() {
+    return &lt;h3&gt; Hello CoderSera! &lt;/h3&gt;
+  }
+}
+
+ ******* props ******
+
+// ES5
+var App = React.createClass({
+  propTypes: { name: React.PropTypes.string },
+  render: function() {
+    return &lt;h3&gt; Hello, { this.props.name }! &lt; /h3&gt;
+  },
+});
+
+// ES6
+class App extends React.Component {
+  render() {
+    return &lt;h3&gt; Hello, { this.props.name }! &lt;/h3&gt;
+  }
+}
+
+ ****** state *****
+
+// ES5
+var App = React.createClass({
+  getInitialState: function() {
+    return { name: &#39;world&#39; };
+  }
+
+  render: function() {
+    return &lt;h3&gt; Hello, { this.state.name }! &lt; /h3&gt;;
+  },
+});
+
+// ES6
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = { name: &#39;world&#39; };
+  }
+
+  render() {
+    return &lt;h3&gt; Hello, { this.state.name }! &lt; /h3&gt;
+  }
+  render() {
+    return;
+    &lt;h3&gt; Hello, { this.state.name }! &lt; /h3&gt;
+  }</code></pre>
+<p>  $\color{blue}{ 10.React 和 Angular 有何不同？}$<br>  <img src="https://img-blog.csdnimg.cn/20191129093948412.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="7"><br>    $\color{blue}{  11. 如何理解“在 React 中，一切都是组件”。}$<br>    React 应用程序的 UI 构建块都是组件。这些部分将整个 UI 划分为许多可自治和可复用的微小部分。然后独立的某个部分发生变化就不会影响 UI 的其余部分。<br>      $\color{blue}{ 12. 解释 React 中 render() 的目的。}$<br>      它被视为普通函数，但 render() 函数必须返回某些值，无论值是否为空。调用组件文件时默认会调用 render() 方法，因为组件需要显示 HTML 标记，或者我们可以说 JSX 语法。每个 React 组件必须有一个 render() 函数，它返回单个 React 元素，该元素代表原生 DOM 组件。如果需要渲染多个 HTML 元素，则必须将它们分组在一个封闭的标签内，如 &lt; form &gt;、&lt; group &gt;和 &lt; div &gt; 等。此函数必须保持纯净，就是说它在每次调用时必须返回相同的结果。</p>
+<pre><code class="javascript">import React, { Component } from &#39;react&#39;;
+
+class App extends Component {
+  render() {
+    return (&lt;div&gt; &lt;h1 className=&#39;App-title&#39;&gt; hello CoderSera &lt;/h1&gt;&lt;/div&gt;)
+  }
+}
+
+export default App;</code></pre>
+<p>$\color{blue}{ 13.什么是 Hooks？    }$<br>Hooks 是一项新功能，使你无需编写类即可使用状态等 React 功能。来看一个 useState hook 示例:</p>
+<pre><code class="java">&lt;em&gt;import &lt;/em&gt;{useState} &lt;em&gt;from &lt;/em&gt;&#39;react&#39;;&lt;br&gt;&lt;br&gt;&lt;em&gt;function &lt;/em&gt;Example() {&lt;br&gt;    &lt;em&gt;// Declare a new</code></pre>
+<p>$\color{blue}{ 14. 什么是 props？    }$</p>
+<ul>
+<li>Props 用于将数据从父级传递到子级或由组件本身传递。它们是不可变的，因此不会更改。<ul>
+<li>Props 是不可变的。因为它们是基于纯函数的概念开发的。在纯函数中，我们无法更改参数数据。因此在 ReactJS 中也无法更改 props 的数据。</li>
+</ul>
+</li>
+</ul>
+<p>$\color{blue}{ 15.React 中的状态是什么，如何使用？    }$<br>组件可以通过状态来跟踪其执行的任何渲染之间的信息。</p>
+<p>状态用于可变数据或将要更改的数据。这对于用户输入尤其方便。以搜索栏为例，用户输入数据时他们看到的内容也会更新。</p>
+<p>$\color{blue}{ 16. 状态和 props 的区别。}$<br><img src="https://img-blog.csdnimg.cn/20191129094636682.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="8"><br>$\color{blue}{  17. 如何更新组件的状态？}$<br>可以使用 this.setState() 更新组件的状态。 </p>
+<pre><code class="javascript">class MyComponent extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            name: &#39;Maxx&#39;,
+            id: &#39;101&#39;
+        }
+    }
+    render()
+        {
+            setTimeout(()=&gt;{this.setState({name:&#39;Jaeha&#39;, id:&#39;222&#39;})},2000)
+            return (
+                    &lt;div&gt;
+                         &lt;h1&gt;Hello {this.state.name}&lt;/h1&gt;
+                         &lt;h2&gt;Your Id is {this.state.id}&lt;/h2&gt;
+                    &lt;/div&gt;
+             );
+        }
+    }
+    ReactDOM.render(
+               &lt;MyComponent/&gt;, document.getElementById(&#39;content&#39;)
+);</code></pre>
+<p>$\color{blue}{ 18.React 中的箭头函数是什么？如何使用？}$<br><strong><em>粗箭头</em></strong>=&gt;用于定义匿名函数，这通常是将参数传递给回调函数的最简单方法。但是你需要在使用它时优化性能。注意：每次渲染组件时，在 render 方法中使用箭头函数都会创建一个新函数，这可能会影响性能。 </p>
+<pre><code class="javascript">//General way
+render() {
+    return(
+        &lt;MyInput onChange={this.handleChange.bind(this) } /&gt;
+    );
+}
+//With Arrow Function
+render() {
+    return(
+        &lt;MyInput onChange={ (e) =&gt; this.handleOnChange(e) } /&gt;
+    );
+}
+</code></pre>
+<p>$\color{blue}{  19. 有状态和无状态组件的区别。}$</p>
+<p><img src="https://img-blog.csdnimg.cn/20191129094859980.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="9"><br>$\color{blue}{  20.React 组件的生命周期有哪些阶段？}$<br>React 组件的生命周期分为三个不同阶段：<br><strong>初始化</strong>：在初始化阶段，我们为 this.props 和 this.state 定义默认值和初始值。<br><strong>挂载</strong>：挂载是将组件插入 DOM 时发生的过程。<br><strong>更新</strong>：这个阶段中，每当状态更改或组件收到新的 prop 时，组件都会更新。<br><strong>卸载</strong>：这是从 DOM 卸载组件的阶段。</p>
+<p>$\color{blue}{  21. 详细解释 React 组件的生命周期技术。}$</p>
+<p><del>一些最重要的生命周期方法包括：<br>componentWillMount()——在初始渲染发生之前，即在 React 将组件插入 DOM 之前立即调用一次。请务必注意，在此方法中调用 this.setState() 不会触发重新渲染。<br>componentDidMount()——在渲染函数之后触发此方法。现在可以访问更新的 DOM，这意味着该方法是初始化其他需要访问 DOM 的 Javascript 库以及数据提取操作的最佳选择。<br>componentWillReceiveProps()——componentWillReceiveProps() 在组件接收新 props 时调用。在调用 render() 方法之前，我们可以用这个方法对 prop 过渡做出反应。在此函数中调用 this.setState() 不会触发额外的重新渲染，我们可以通过 this.props 访问旧的 props。<br>shouldComponentUpdate()——我们可以用它来决定下一个组件的状态是否应触发重新渲染。此方法返回一个布尔值，默认为 true。但是我们可以返回 false，并且不会调用以下方法：<br>componentWillUpdate()——当接收到新的 props 或状态时，在渲染（更新）之前立即调用此方法。我们可以用它在更新之前做准备，但是不允许使用 this.setState()。<br>componentDidUpdate()——React 更新 DOM 后立即调用此方法。我们可以使用此方法与更新后的 DOM 交互，或执行任何渲染后操作。<br>componentWillUnmount()——从 DOM 卸载组件之前立即调用此方法。我们可以用它执行可能需要的任何清理工作。</del></p>
+<p>$\color{blue}{   22.React 中的事件是什么？}$<br>在 React 中，事件是对特定动作（如鼠标悬停、鼠标单击和按键等）触发的反应。处理这些事件类似于处理 DOM 元素上的事件。但是在语法上存在一些差异，例如：</p>
+<ul>
+<li>事件命名使用驼峰式大小写，而不是仅使用小写字母。</li>
+<li>事件作为函数而不是字符串传递。</li>
+</ul>
+<p>事件参数包含一组特定于事件的属性。每个事件类型都包含它自己的属性和行为，这些属性和行为只能通过它的事件处理程序访问。</p>
+<p>$\color{blue}{  23. 如何在 React 中创建事件？}$</p>
+<pre><code class="javascript">class Display extends React.Component({
+    show(evt) {
+        // code
+    },
+    render() {
+        // Render the div with an onClick prop (value is a function)
+        return (
+                &lt;div onClick={this.show}&gt;Click Me!&lt;/div&gt;
+         );
+    }
+});</code></pre>
+<p>$\color{blue}{   24. 什么是 React 中的合成事件？    }$</p>
+<p>合成事件是围绕浏览器原生事件充当跨浏览器包装器的对象。它们将不同的浏览器行为合并为一个 API。这样做是为了确保在各个浏览器的事件中显示一致的特征。</p>
+<p>$\color{blue}{   25. 如何理解 React 中的引用？}$<br>Ref 是 React 引用的简写。它是一个属性，帮助存储对特定元素或组件的引用，由组件渲染的配置函数返回。它用于返回对渲染返回的特定元素或组件的引用。当我们需要 DOM 测量或向组件添加方法时，它们会派上用场。 </p>
+<pre><code class="javascript">class ReferenceDemo extends React.Component{
+     display() {
+         const name = this.inputDemo.value;
+         document.getElementById(&#39;disp&#39;).innerHTML = name;
+               }
+     render() {
+             return(
+                  &lt;div&gt;
+            Name: &lt;input type=&quot;text&quot; ref={input =&gt; this.inputDemo = input} /&gt;
+            &lt;button name=&quot;Click&quot; onClick={this.display}&gt;Click&lt;/button&gt;
+
+                        &lt;h2&gt;Hello &lt;span id=&quot;disp&quot;&gt;&lt;/span&gt; !!!&lt;/h2&gt;
+                  &lt;/div&gt;
+     );
+   }
+ }</code></pre>
+<p>$\color{blue}{ 26. 列出一些应该使用引用的情况？    }$</p>
+<p>以下是应使用 ref 的情况：<br>当你需要管理焦点、选择文本或媒体播放时。<br>触发命令式动画。<br>与第三方 DOM 库集成。</p>
+<p>$\color{blue}{   27. 如何模块化 React 代码？}$</p>
+<p>可以使用 export 和 import 属性来模块化软件。它们有助于在不同的文档中单独编写组件。 </p>
+<pre><code class="javascript">//ChildComponent.jsx
+export default class ChildComponent extends React.Component {
+    render() {
+        return( &lt;div&gt;
+                       &lt;h1&gt;This is a child component&lt;/h1&gt;
+                 &lt;/div&gt;)
+    }
+}
+
+//ParentComponent.jsx
+import ChildComponent from &#39;./childcomponent.js&#39;;
+class ParentComponent extends React.Component {
+    render() {
+        return(
+             &lt;div&gt;
+                &lt;App /&gt;
+            &lt;/div&gt;
+        );
+    }
+}</code></pre>
+<p>$\color{blue}{ 28. 在 React 中如何创建表单？}$<br>React 提供了一种有状态的，响应式的方法来构建表单。与其他 DOM 元素不同，HTML 表单元素在 React 中的工作机制有所不同。例如，表单数据通常由组件而不是 DOM 处理，并且通常使用受控组件来实现。</p>
+<p>区别在于可以使用回调函数来处理表单事件，然后使用容器的状态存储表单数据。这使你的组件可以更好地控制表单控制元素和表单数据。</p>
+<p>回调函数是在发生事件（包括更改表单控制值或表单提交）时触发的。 </p>
+<pre><code class="javascript">handleSubmit(event) {
+    alert(&#39;A name was submitted: &#39; + this.state.value);
+    event.preventDefault();
+}
+
+render() {
+    return (
+
+
+
+&lt;form onSubmit={this.handleSubmit}&gt;
+            &lt;label&gt;
+                Name:
+                &lt;input type=&quot;text&quot; value={this.state.value} onChange={this.handleSubmit} /&gt;
+            &lt;/label&gt;
+            &lt;input type=&quot;submit&quot; value=&quot;Submit&quot; /&gt;
+        &lt;/form&gt;
+
+
+
+    );
+}</code></pre>
+<p>$\color{blue}{  29. 如何理解受控和非受控组件}$<br><img src="https://img-blog.csdnimg.cn/20191129095754990.jpg" alt="0"><br> $\color{blue}{30. 高阶组件（HOC）是什么意思？}$<br>React 中的高阶组件是一种在组件之间共享通用功能而无需重复代码的模式。</p>
+<p>高阶组件实际上不是组件，它是一个接受组件并返回新组件的函数。它将一个组件转换为另一个组件，并添加其他数据或功能<br> $\color{blue}{ 31.HOC 可以做什么？}$</p>
+<p>代码复用，逻辑和引导抽象。</p>
+<p>渲染劫持。</p>
+<p>状态抽象和控制。</p>
+<p>Props 操控。<br> $\color{blue}{ 32. 什么是纯组件？}$</p>
+<p>React 并没有在我们的组件中编写 shouldCom- ponent 方法，而是引入了一个带有内置 shouldComponentUpdate 实现的新组件，它是 React.PureComponent 组件。</p>
+<p>React.PureComponent 通过浅层 prop 和状态比较来实现它。在某些情况下，你可以使用 React.PureComponent 来提高性能。</p>
+<p> $\color{blue}{ 33.React 中键有什么用途？}$</p>
+<p>键可帮助 React 识别哪些项目已更改、添加或删除。应该为数组内的元素提供键，以赋予元素稳定的身份。键必须是唯一的。</p>
+<p>当使用动态创建的组件或用户更改列表时，React 键非常有用。设置键值后，更改后的组件就能保持唯一标识。</p>
+<p> $\color{blue}{ 34.MVC 框架的主要问题有哪些？}$</p>
+<p>MVC 不能解决代码复杂性问题。它也不能解决代码复用或灵活性问题。<br>它不保证解耦代码。<br>$\color{blue}{ 35. 你对 Flux 有什么了解？ }$<br>Flux 是 Facebook 内部与 React 搭配使用的架构。它不是框架或库。只是一种新型的体系结构，是对 React 和单向数据流概念的补充：<br>Flux 的各个组成部分如下：</p>
+<ul>
+<li>动作（Actions）——帮助数据传递到调度器的辅助方法。</li>
+<li>调度器（Dispatcher）——接收动作并将负载广播到已注册的回调。</li>
+<li>存储（Stores）——具有已注册到调度器的回调的应用程序状态和逻辑的容器。</li>
+<li>控制器视图（ControllerViews）——从组件中获取状态并通过 props 传递给子组件的 React 组件。<br><img src="https://img-blog.csdnimg.cn/20191129100045651.jpg" alt="11"><br>$\color{blue}{ 36. 什么是 Redux？ }$</li>
+</ul>
+<p>Redux 是一种状态管理工具。尽管它主要与 React 搭配使用，但也可以与其他任何 JavaScript 框架或库搭配。</p>
+<p>Redux 允许你在一个称为存储（Store）的对象中管理整个应用程序状态。</p>
+<p>对存储的更新将触发与存储的已更新部分连接的组件的重新渲染。当我们想要更新某些东西时，我们称之为动作（Action）。我们还创建函数来处理这些动作并返回更新的存储。这些函数称为 Reducer。</p>
+<p>$\color{blue}{  37.Redux 遵循的三大原则是什么？}$</p>
+<p>单一可信来源：整个应用程序的状态存储在单个存储区中的对象 / 状态树中。单一状态树使我们能更容易地跟踪历史更改，更方便地调试或检查应用程序。</p>
+<p>状态是只读的：更改状态的唯一方法是触发动作。动作是描述更改的普通 JS 对象。就像状态是数据的最小表示一样，动作是数据更改的最小表示。</p>
+<p>使用纯函数更改：为了确认动作是如何转换状态树的，你需要纯函数。纯函数是返回值仅取决于其参数值的函数。</p>
+<p>$\color{blue}{ 38. 如何理解“单一可信源”？}$</p>
+<p>单一可信源（SSOT）是构造信息模型和相关数据模式的实践，其中每个数据元素都只能在一个地方掌握（或编辑）</p>
+<p>Redux 使用“存储”将应用程序的整个状态存储在一个位置。因此，组件的所有状态都存储在存储中，并且存储本身会接收更新。单一状态树使我们能更容易地跟踪历史更改，更方便地调试或检查应用程序。</p>
+<p>$\color{blue}{ 39. 列出 Redux 的组件。 }$</p>
+<ul>
+<li>动作——这是一个描述发生了什么的对象。</li>
+<li>Reducer——确定状态如何变化的地方。</li>
+<li>存储——整个应用程序的状态 / 对象树保存在存储中。</li>
+<li>视图——仅显示存储提供的数据。<br>$\color{blue}{ 40. 数据在 Redux 中是如何流动的？ }$<br><img src="https://img-blog.csdnimg.cn/2019112910023889.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="12"><br>$\color{blue}{  41. 在 Redux 中如何定义动作？ }$<br>React 中的动作必须具有 type 属性，该属性指示正在执行的 ACTION 的类型。必须将它们定义为字符串常量，你也可以为其添加更多属性。在 Redux 中使用称为“动作创建者”的函数来创建动作。以下是动作和动作创建者的示例： </li>
+</ul>
+<pre><code class="javascript">function addTodo(text) {
+       return {
+                type: ADD_TODO,
+                 text
+    }
+}</code></pre>
+<p>$\color{blue}{  42. 说明 Reducer 的作用。    }$<br>Reducer 是用于指示 ACTION 反应中应用程序状态变化的简单功能。它接收先前的状态和动作，然后返回新的状态。它根据动作类型确定需要哪种更新，然后返回新值。如果没有要完成的工作，它将按原样返回先前状态。<br>$\color{blue}{43. 在 Redux 中存储的用途是什么？    }$<br>存储是一个 JavaScript 对象，可以保存应用程序的状态，并提供一些辅助方法来访问状态、调度动作并记录侦听器。应用程序的整个状态 / 对象树存储在单个存储中。因此 Redux 非常容易理解且可预测。我们可以将中间件转移到存储，以管理数据处理任务，并维护更改存储状态的各种活动的日志。通过 Reducer，所有活动都返回新的状态。<br>$\color{blue}{  44.Redux 与 Flux 有何不同？}$<br><img src="https://img-blog.csdnimg.cn/20191129100425605.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="14"><br>$\color{blue}{   45.Redux 有哪些优势？}$<br>Redux 的优点如下：</p>
+<ul>
+<li>结果的可预测性——由于总是有单一可信源，比如存储，因此当前状态与动作及应用程序的其他部分同步时不会出现混乱。</li>
+<li>可维护性——代码易于维护，具有可预测的结果和严格的结构。</li>
+<li>服务端渲染——你只需将在服务器上创建的存储传递给客户端即可。这对于初始渲染非常有用，并优化了应用程序性能，提供了更好的用户体验。</li>
+<li>开发人员工具——从动作到状态更改，开发人员可以利用这些工具实时跟踪应用程序中发生的所有事情。</li>
+<li>社区和生态系统——Redux背后拥有巨大的社区，用起来更加便利。大批优秀的开发者为库的发展做出了贡献，并开发了很多应用程序。 </li>
+<li>易于测试——Redux<br>的代码主要是较小的、纯净的和孤立的函数。这使代码可测试且独立。 组织——Redux<br>精确地规定了代码的组织方式，这使得团队合作时代码更加一致，更容易理解。</li>
+</ul>
+<p>$\color{blue}{ 46. 什么是 React Router？}$</p>
+<p>React Router 是建立在 React 之上的功能强大的路由库。它使 URL 与网页上显示的数据保持同步。它保持标准化的结构和行为，可用于开发单页 Web 应用程序。React Router 有一个简单的 API。React Router 提供了一种方法，只会显示你的应用中路由匹配你的定义的那些组件。</p>
+<p>$\color{blue}{  47. 为什么在 React Router v4 中使用 switch 关键字？}$</p>
+<p>在 Switch 组件内，Route 和 Redirect 组件嵌套在内部。从 Switch 顶部的 Route/Redirect 组件开始到底部的 Route/Redirect，根据浏览器中当前的 URL 是否与 Route/Redirect 组件的 prop/ 路径匹配，将每个组件评估为 true 或 false。</p>
+<p>Switch 只会渲染第一个匹配的子级。当我们嵌套了下面这样的路由时真的很方便： </p>
+<pre><code class="javascript">&lt;Switch&gt;
+  &lt;Route path=&quot;/accounts/new&quot; component={AddForm} /&gt;
+  &lt;Route path={`/accounts/:accountId`} component={Profile} /&gt;
+&lt;/Switch&gt;</code></pre>
+<p>$\color{blue}{ 48. 为什么我们在 React 中需要一个路由器？}$</p>
+<p>路由器用于定义多个路由，并且当用户键入特定的 URL 时，如果该 URL 与路由器内部定义的任何“路由”的路径匹配，则该用户将被重定向到该路由。因此我们需要在应用程序中添加一个路由器库，以允许创建多个路由，每个路由都为我们指向一个独特的视图。</p>
+<p>从 React Router 包导入的组件有两个属性，一个是将用户引导到指定路径的 path，另一个是用于定义所述路径中内容的 component。</p>
+<pre><code class="javascript">&lt;switch&gt;
+    &lt;route exact path=’/’ component={Home}/&gt;
+    &lt;route path=’/posts/:id’ component={Newpost}/&gt;
+    &lt;route path=’/posts’   component={Post}/&gt;
+&lt;/switch&gt;</code></pre>
+<p>$\color{blue}{ 49. 列出 React Router 的优点。}$</p>
+<p>就像 React 基于组件的理念一样，在 React Router v4 中 API 是“完全组件化的”。路由器可以可视化为单个根组件（<BrowserRouter>），其中包含特定的子路由（<route>）。<br>无需手动设置历史值：在 React Router v4 中，我们要做的就是将路由包装在<BrowserRouter>组件中。<br>包是拆分的：三个包分别用于 Web、Native 和 Core。这使我们的应用更加紧凑。它们的编码样式类似，所以很容易来回切换。<br>$\color{blue}{  50.React Router 与传统路由有何不同？}$<br><img src="https://img-blog.csdnimg.cn/20191129101043517.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjgxMzU4OA==,size_16,color_FFFFFF,t_70" alt="14"></p>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls"
+                data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+            <ul id="audio-list" style="display:none">
+                
+                
+                <li title='0' data-url='/statics/chengdu.mp3'></li>
+                
+                    
+            </ul>
+            
+            
+            
+    <div id='gitalk-container' class="comment link"
+        data-ae='true'
+        data-ci='ec894e2b66f752e8b7fb'
+        data-cs='3ccc2e92bb350688fe2c2dc2930189b62622bfb1'
+        data-r='blog-comments'
+        data-o='TriDiamond'
+        data-a='TriDiamond'
+        data-d=''
+    >Comments</div>
+
+
+            
+            
+        </div>
+        <div class="sidebar">
+            <div class="box animated fadeInRight">
+                <div class="subbox">
+                    <img src="https://res.cloudinary.com/tridiamond/image/upload/v1573019751/TriDiamond_logo_ui_xeublz.jpg" height=300 width=300></img>
+                    <p>国营</p>
+                    <span>I'm a front-end development engineer and I speak for myself</span>
+                    <dl>
+                        <dd><a href="https://github.com/TriDiamond" target="_blank"><span
+                                    class=" iconfont icon-github"></span></a></dd>
+                        <dd><a href="https://twitter.com/TriDiamond6" target="_blank"><span
+                                    class=" iconfont icon-twitter"></span></a></dd>
+                        <dd><a href="https://stackoverflow.com/users/7602324/tridiamond?tab=profile" target="_blank"><span
+                                    class=" iconfont icon-stack-overflow"></span></a></dd>
+                    </dl>
+                </div>
+                <ul>
+                    <li><a href="/">3 <p>Articles</p></a></li>
+                    <li><a href="/categories">1 <p>Categories</p></a></li>
+                    <li><a href="/tags">4 <p>Tags</p></a></li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="box sticky animated fadeInRight faster">
+                <div id="toc" class="subbox">
+                    <h4>Contents</h4>
+                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#你真的了解React吗？这里有50个React面试问题"><span class="toc-number">1.</span> <span class="toc-text">你真的了解React吗？这里有50个React面试问题</span></a></li></ol>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+    <div id="back-to-top" class="animated fadeIn faster">
+        <div class="flow"></div>
+        <span class="percentage animated fadeIn faster">0%</span>
+        <span class="iconfont icon-top02 animated fadeIn faster"></span>
+    </div>
+</body>
+<footer>
+    <p class="copyright" id="copyright">
+        &copy; 2019
+        <span class="gradient-text">
+            国营
+        </span>.
+        Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        Theme
+        <span class="gradient-text">
+            <a href="https://github.com/TriDiamond/hexo-theme-obsidian" title="Obsidian" target="_blank" rel="noopener">Obsidian</a>
+        </span>
+        <small><a href="https://github.com/TriDiamond/hexo-theme-obsidian/blob/master/CHANGELOG.md" title="v1.4.3" target="_blank" rel="noopener">v1.4.3</a></small>
+    </p>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bootcss.com/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+<script>
+  MathJax.Hub.Config({
+    "HTML-CSS": {
+      preferredFont: "TeX",
+      availableFonts: ["STIX", "TeX"],
+      linebreaks: {
+        automatic: true
+      },
+      EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50)
+    },
+    tex2jax: {
+      inlineMath: [
+        ["$", "$"],
+        ["\\(", "\\)"]
+      ],
+      processEscapes: true,
+      ignoreClass: "tex2jax_ignore|dno",
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    },
+    TeX: {
+      noUndefined: {
+        attributes: {
+          mathcolor: "red",
+          mathbackground: "#FFEEEE",
+          mathsize: "90%"
+        }
+      },
+      Macros: {
+        href: "{}"
+      }
+    },
+    messageStyle: "none"
+  });
+</script>
+<script>
+  function initialMathJax() {
+    MathJax.Hub.Queue(function () {
+      var all = MathJax.Hub.getAllJax(),
+        i;
+      // console.log(all);
+      for (i = 0; i < all.length; i += 1) {
+        console.log(all[i].SourceElement().parentNode)
+        all[i].SourceElement().parentNode.className += ' has-jax';
+      }
+    });
+  }
+
+  function reprocessMathJax() {
+    if (typeof MathJax !== 'undefined') {
+      MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+    }
+  }
+</script>
+
+
+
+    <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css">
+    <script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/obsidian.js"></script>
+<script src="/js/jquery.truncate.js"></script>
+<script src="/js/search.js"></script>
+<script src="//cdn.bootcss.com/typed.js/2.0.10/typed.min.js"></script>
+<script src="//cdn.bootcss.com/blueimp-md5/2.12.0/js/md5.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+<script src="https://cdn.bootcss.com/codemirror/5.48.4/codemirror.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/javascript/javascript.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/css/css.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/xml/xml.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/htmlmixed/htmlmixed.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/clike/clike.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/php/php.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/shell/shell.min.js"></script>
+
+    <script src="//cdn.bootcss.com/codemirror/5.48.4/mode/python/python.min.js"></script>
+
+
+
+    <script src="/js/busuanzi.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('span[id^="busuanzi_"]').length) {
+                initialBusuanzi();
+            }
+        });
+    </script>
+
+
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.css">
+<link rel="stylesheet" href="//cdn.bootcss.com/photoswipe/4.1.3/default-skin/default-skin.min.css">
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe.min.js"></script>
+<script src="//cdn.bootcss.com/photoswipe/4.1.3/photoswipe-ui-default.min.js"></script>
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="//www.googletagmanager.com/gtag/js?id=UA-149874671-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149874671-1');
+    </script>
+
+
+
+
+
+<script>
+    function initialTyped () {
+        var typedTextEl = $('.typed-text');
+        if (typedTextEl && typedTextEl.length > 0) {
+            var typed = new Typed('.typed-text', {
+                strings: ["I&#39;m a front-end development engineer and I speak for myself", "我是一名前端开发工程师，我为自己代言"],
+                typeSpeed: 90,
+                loop: true,
+                loopCount: Infinity,
+                backSpeed: 20,
+            });
+        }
+    }
+
+    if ($('.article-header') && $('.article-header').length) {
+        $(document).ready(function () {
+            initialTyped();
+        });
+    }
+</script>
+
+
+
+
+</html>
